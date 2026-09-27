@@ -6,15 +6,15 @@
  * Initial Commit: Sept. 26th, 2026
  * */
 
-#include <TPS/utils/parseInput.hpp>
-#include <TPS/core/ImportAll.h>
-#include <TPS/lib/models/ImportAll.h>
+#include <parseInput.hpp>
+#include <ImportAll_models.h>
+#include <ImportAll_core.h>
 
 
 int main (int argc, char *argv[]) {
+    std::string filename = "testfile.txt";
 
-
-    parseIputFile();
+    parseInputFile(filename);
 
     return 0;
 }

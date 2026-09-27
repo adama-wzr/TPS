@@ -5,13 +5,13 @@
 #include <fstream>
 #include <string>
 
-#include <TPS/core/core.hpp>
+#include <ImportAll_core.h>
 
 
 int parseInputFile(std::string path_to_input)
 {
     // try to read input file
-    std::ifstream inFile(path_to_input);
+    std::ifstream myFile(path_to_input);
 
     if (!myFile)
     {
@@ -21,7 +21,7 @@ int parseInputFile(std::string path_to_input)
 
     std::cout << "Hello World!" << std::endl;
 
-    return stat;
+    return 0;
 }
 
 #endif // !INPUT_PARSE
